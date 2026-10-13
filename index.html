@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find your somewhere with WANDER. Discover remarkable destinations, thoughtful experiences, and your next great escape.">
+  <title>WANDER — Find Your Somewhere</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="WANDER home"><span class="brand-mark">W</span><span>WANDER<span class="brand-dot">.</span></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav-links" id="navLinks">
+      <a class="active" href="#home">Home</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#experiences">Experiences</a>
+      <a href="#inspiration">Journal</a>
+    </nav>
+    <a class="nav-cta" href="#destinations">Plan a trip <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-image" role="img" aria-label="Turquoise sea beside a tropical island"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow light"><span class="eyebrow-line"></span> YOUR NEXT CHAPTER STARTS HERE</p>
+        <h1>Find your<br><em>somewhere.</em></h1>
+        <p class="hero-copy">The world is full of places that change you.<br>Let's find the one that's calling your name.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="#destinations">Explore destinations <span>↗</span></a>
+          <a class="text-link light-link" href="#experiences"><span class="play-icon">▶</span> Find your kind of escape</a>
+        </div>
+      </div>
+      <div class="hero-caption"><span class="caption-line"></span><span>01 / 04</span><span>THE MALDIVES</span></div>
+      <div class="hero-side-note">GO A LITTLE FURTHER</div>
+      <div class="hero-bottom">
+        <span>MADE FOR THE CURIOUS</span><span class="scroll-note">SCROLL TO EXPLORE ↓</span>
+        <span class="hero-coordinates">3°12′ N &nbsp; 73°13′ E</span>
+      </div>
+    </section>
+
+    <section class="search-wrap" aria-label="Find a destination">
+      <form class="search-panel" id="searchForm">
+        <label class="search-field">
+          <span class="field-icon">⌕</span><span class="field-copy"><span class="field-label">WHERE TO?</span><input id="searchInput" type="search" placeholder="Search destinations..." autocomplete="off"></span>
+        </label>
+        <div class="search-divider"></div>
+        <label class="search-field">
+          <span class="field-icon">◷</span><span class="field-copy"><span class="field-label">YOUR TRAVEL MOOD</span><select id="moodSelect"><option value="all">Anything sounds good</option><option value="beach">Beach & island</option><option value="nature">Nature & outdoors</option><option value="culture">Culture & city</option><option value="adventure">Adventure</option></select></span>
+        </label>
+        <button class="button button-blue search-button" type="submit">Find my escape <span>↗</span></button>
+      </form>
+    </section>
+
+    <section class="section destinations-section" id="destinations">
+      <div class="section-heading">
+        <div><p class="eyebrow"><span class="eyebrow-line"></span> THE WORLD, YOUR WAY</p><h2>Somewhere <em>extraordinary.</em></h2></div>
+        <p class="section-intro">From slow mornings by the sea to streets that never sleep, your next favourite place is out there.</p>
+      </div>
+      <div class="filter-row" id="filterRow" aria-label="Filter destinations">
+        <button class="filter-chip selected" data-filter="all">All places <span>06</span></button>
+        <button class="filter-chip" data-filter="beach">Beach life</button>
+        <button class="filter-chip" data-filter="nature">Nature</button>
+        <button class="filter-chip" data-filter="culture">Culture</button>
+        <button class="filter-chip" data-filter="adventure">Adventure</button>
+        <span class="results-count" id="resultsCount">6 places to wander</span>
+      </div>
+      <div class="destination-grid" id="destinationGrid">
+        <article class="destination-card" data-name="amalfi coast italy" data-category="beach culture">
+          <a class="destination-image" href="#newsletter" aria-label="Discover Amalfi Coast"><img src="https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?auto=format&fit=crop&w=900&q=85" alt="Colourful buildings along the Amalfi Coast" loading="lazy"><span class="image-tag">SLOW LIVING</span><span class="heart" aria-hidden="true">♡</span></a>
+          <div class="card-meta"><span>ITALY · EUROPE</span><span class="rating">★ 4.9</span></div><h3>Amalfi Coast</h3><p class="card-description">Sun-warmed villages and the art of doing nothing.</p><div class="card-bottom"><span>From <strong>$890</strong> <small>/ person</small></span><a href="#newsletter" aria-label="Explore Amalfi Coast">↗</a></div>
+        </article>
+        <article class="destination-card" data-name="bali indonesia" data-category="beach nature adventure">
+          <a class="destination-image" href="#newsletter" aria-label="Discover Bali"><img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=85" alt="Bali tropical temple and lush greenery" loading="lazy"><span class="image-tag">SOUL RESET</span><span class="heart" aria-hidden="true">♡</span></a>
+          <div class="card-meta"><span>INDONESIA · ASIA</span><span class="rating">★ 4.8</span></div><h3>Bali</h3><p class="card-description">Jungle mornings, ocean air, and a slower rhythm.</p><div class="card-bottom"><span>From <strong>$640</strong> <small>/ person</small></span><a href="#newsletter" aria-label="Explore Bali">↗</a></div>
+        </article>
+        <article class="destination-card" data-name="kyoto japan" data-category="culture nature">
+          <a class="destination-image" href="#newsletter" aria-label="Discover Kyoto"><img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=85" alt="Traditional Kyoto street framed by Japanese architecture" loading="lazy"><span class="image-tag">TIMELESS BEAUTY</span><span class="heart" aria-hidden="true">♡</span></a>
+          <div class="card-meta"><span>JAPAN · ASIA</span><span class="rating">★ 4.9</span></div><h3>Kyoto</h3><p class="card-description">Quiet temples, hidden lanes, and beautiful rituals.</p><div class="card-bottom"><span>From <strong>$1,120</strong> <small>/ person</small></span><a href="#newsletter" aria-label="Explore Kyoto">↗</a></div>
+        </article>
+        <article class="destination-card" data-name="patagonia chile argentina" data-category="nature adventure">
+          <a class="destination-image" href="#newsletter" aria-label="Discover Patagonia"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=85" alt="Dramatic snow-covered mountain range" loading="lazy"><span class="image-tag">WILD & FREE</span><span class="heart" aria-hidden="true">♡</span></a>
+          <div class="card-meta"><span>CHILE · SOUTH AMERICA</span><span class="rating">★ 4.9</span></div><h3>Patagonia</h3><p class="card-description">Big skies, wild trails, and room to breathe.</p><div class="card-bottom"><span>From <strong>$1,450</strong> <small>/ person</small></span><a href="#newsletter" aria-label="Explore Patagonia">↗</a></div>
+        </article>
+        <article class="destination-card" data-name="marrakech morocco" data-category="culture adventure">
+          <a class="destination-image" href="#newsletter" aria-label="Discover Marrakech"><img src="https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=900&q=85" alt="Warm terracotta architecture in Morocco" loading="lazy"><span class="image-tag">SENSORY ESCAPE</span><span class="heart" aria-hidden="true">♡</span></a>
+          <div class="card-meta"><span>MOROCCO · AFRICA</span><span class="rating">★ 4.7</span></div><h3>Marrakech</h3><p class="card-description">Spice-scented souks and colour around every corner.</p><div class="card-bottom"><span>From <strong>$720</strong> <small>/ person</small></span><a href="#newsletter" aria-label="Explore Marrakech">↗</a></div>
+        </article>
+        <article class="destination-card" data-name="queenstown new zealand" data-category="nature adventure">
+          <a class="destination-image" href="#newsletter" aria-label="Discover Queenstown"><img src="https://images.unsplash.com/photo-1507699622108-4be3abd695ad?auto=format&fit=crop&w=900&q=85" alt="Peaceful lake surrounded by dramatic mountains" loading="lazy"><span class="image-tag">THRILL SEEKER</span><span class="heart" aria-hidden="true">♡</span></a>
+          <div class="card-meta"><span>NEW ZEALAND · OCEANIA</span><span class="rating">★ 4.8</span></div><h3>Queenstown</h3><p class="card-description">Mountain air, glassy lakes, and a little adrenaline.</p><div class="card-bottom"><span>From <strong>$980</strong> <small>/ person</small></span><a href="#newsletter" aria-label="Explore Queenstown">↗</a></div>
+        </article>
+      </div>
+      <p class="no-results" id="noResults" hidden>No destinations found. Try another place or choose a different travel mood.</p>
+      <div class="center-action"><a class="button button-outline" href="#inspiration">Find your inspiration <span>↗</span></a></div>
+    </section>
+
+    <section class="experience-section" id="experiences">
+      <div class="experience-photo"><img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1500&q=90" alt="Alpine lake with a small boat and mountains" loading="lazy"><div class="photo-stamp">TAKE<br>THE<br>SCENIC<br>ROUTE</div></div>
+      <div class="experience-content"><p class="eyebrow light"><span class="eyebrow-line"></span> NOT JUST A PLACE</p><h2>Collect moments.<br><em>Not just miles.</em></h2><p class="experience-copy">The best trips aren't measured in check-ins. They're the unexpected detours, the long lunches, the strangers who become stories, and the views that make you stop mid-sentence.</p>
+        <div class="experience-list"><div><span class="experience-number">01</span><span><strong>Go beyond the guidebook</strong><small>Find the local places worth getting lost for.</small></span><span class="list-arrow">↗</span></div><div><span class="experience-number">02</span><span><strong>Travel at your own pace</strong><small>Make room for the moments you didn't plan.</small></span><span class="list-arrow">↗</span></div><div><span class="experience-number">03</span><span><strong>Come back with a story</strong><small>Choose experiences that stay with you.</small></span><span class="list-arrow">↗</span></div></div>
+        <a class="button button-light" href="#inspiration">Explore the possibilities <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="section inspiration-section" id="inspiration">
+      <div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> A LITTLE INSPIRATION</p><h2>For the <em>daydreamers.</em></h2></div><p class="section-intro">A few gentle reminders that there is always somewhere new to discover.</p></div>
+      <div class="inspiration-grid">
+        <a class="inspiration-card inspiration-large" href="#destinations"><img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1200&q=85" alt="Colourful coastal Italian village" loading="lazy"><span class="inspiration-overlay"><small>THE ART OF SLOW TRAVEL</small><strong>Take the long way home.</strong><span class="inspiration-arrow">↗</span></span></a>
+        <a class="inspiration-card" href="#destinations"><img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=85" alt="Sunlight falling over a lush green mountain valley" loading="lazy"><span class="inspiration-overlay"><small>FIND YOUR WILD</small><strong>Let nature set the pace.</strong><span class="inspiration-arrow">↗</span></span></a>
+        <a class="inspiration-card" href="#destinations"><img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=900&q=85" alt="Starry night sky over a quiet landscape" loading="lazy"><span class="inspiration-overlay"><small>ROOM TO BREATHE</small><strong>Somewhere under the stars.</strong><span class="inspiration-arrow">↗</span></span></a>
+      </div>
+    </section>
+
+    <section class="newsletter-section" id="newsletter">
+      <div class="newsletter-orbit orbit-one"></div><div class="newsletter-orbit orbit-two"></div>
+      <div class="newsletter-inner"><p class="eyebrow light"><span class="eyebrow-line"></span> A POSTCARD FROM SOMEWHERE</p><h2>Your next escape<br>starts <em>in your inbox.</em></h2><p>Fresh places, thoughtful travel notes, and a little wanderlust. No noise, just good things.</p>
+        <form class="newsletter-form" id="newsletterForm"><label class="visually-hidden" for="emailInput">Your email address</label><input id="emailInput" type="email" placeholder="Your email address" required><button type="submit" aria-label="Subscribe to newsletter">Count me in <span>↗</span></button></form><p class="form-message" id="formMessage" aria-live="polite"></p><small class="privacy-note">A little inspiration, never spam. Unsubscribe whenever.</small>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-top"><a class="brand footer-brand" href="#home"><span class="brand-mark">W</span><span>WANDER<span class="brand-dot">.</span></span></a><p>Find your somewhere.<br>Then make it a story.</p><a class="back-top" href="#home">BACK TO TOP ↑</a></div><div class="footer-bottom"><span>© <span id="year"></span> WANDER TRAVEL CO.</span><span>MADE FOR THE CURIOUS, EVERYWHERE.</span><div><a href="#destinations">Explore</a><a href="#experiences">Our approach</a><a href="#newsletter">Get in touch</a></div></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
